@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tradeactivity"
+    android:background="@drawable/grassasthe">
+
+    <ScrollView
+        android:id="@+id/Tscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/tlinearlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tedittext1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ttextview1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/white"
+                android:defaultFocusHighlightEnabled="true"
+                android:hint="Enter product u wish to trade"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/tedittext2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tedittext1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/white"
+                android:hint="Product Description in detail"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/tSelect_product_image"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tedittext2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/uploadbg" />
+
+            <Button
+                android:id="@+id/Tbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tSelect_product_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="140dp"
+                android:text="Submit"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/ttextview1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
